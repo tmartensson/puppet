@@ -1,4 +1,4 @@
-node "lkl5505.lkl.ltkalmar.se" {
+node default {
   include 'motd'
 }
 
