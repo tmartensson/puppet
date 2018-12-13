@@ -1,7 +1,5 @@
 class motd {
 
-     $ascii = generate('/bin/sh', '-c', "/usr/bin/figlet -c -w 60 ${hostname}")
-
      file { 'motd':
          name    => '/etc/motd',
          mode    => '0664',
