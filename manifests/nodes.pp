@@ -3,7 +3,7 @@ node default {
 }
 
 node "lkl5502.lkl.ltkalmar.se" {
-  class { 'puppetdb':
+  class { 'puppetdb::master::config':
       listen_address => '127.0.0.1'
   }
 }
