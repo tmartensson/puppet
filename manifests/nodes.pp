@@ -4,7 +4,9 @@ node default {
 
 node "lkl5502.lkl.ltkalmar.se" {
   # Configure puppetdb and its underlying database
-  class { 'puppetdb': }
+  class { 'puppetdb':
+      listen_address => '0.0.0.0'
+  }
   # Configure the Puppet master to use puppetdb
   class { 'puppetdb::master::config': }
 }
